@@ -49,7 +49,7 @@ class Heart.Views.Hearts.IndexView extends Backbone.View
     # alert('test');
     scrollTop = $(e.currentTarget).scrollTop()
 
-    console.log [ scrollTop, $(document).height()]
+    # console.log [ scrollTop, $(document).height()]
     if(scrollTop > ($(document).height() - 1000))
       @fetchMoreHearts()
 
@@ -57,7 +57,7 @@ class Heart.Views.Hearts.IndexView extends Backbone.View
       view.reposition scrollTop
 
   fetchMoreHearts: =>
-    console.log 'fetchMoreHearts'
+    # console.log 'fetchMoreHearts'
     hearts = @options.hearts
     for heart in window.hearts
       hearts.add {description: heart.description}
