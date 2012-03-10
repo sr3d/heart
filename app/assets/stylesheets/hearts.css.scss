@@ -1,0 +1,14 @@
+// Place all the styles related to the Hearts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body { padding:0; margin: 0;}
+.app { position: fixed; height: 100%; width: 100%; overflow: hidden;
+  // #fauxScroll { background-color: #DCDCDC;}
+  .heart { position: fixed;
+    .wrapper { position: relative; width: 200px; height: 200px;
+      .description { 
+        position: absolute; top: 30%; left: 30%; color: red; font-family: Arial; font-size: 16px;
+      }
+    }
+  }
+}
